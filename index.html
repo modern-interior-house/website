@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মডার্ন ইন্টেরিয়র হাউস | Modern interior House - স্টাফ কোয়ার্টার, ডেমরা, ঢাকা</title>
+    <meta name="description" content="মডার্ন ইন্টেরিয়র হাউস (Modern interior House) - স্টাফ কোয়ার্টার, ডেমরা, ঢাকা। ফ্ল্যাট, বাসাবাড়ি, মডার্ন কিচেন ক্যাবিনেট এবং অফিস ইন্টেরিয়র ডিজাইনের বিশ্বস্ত প্রতিষ্ঠান। কল করুন: 0161-4545-932">
+    
+    <!-- Open Graph / Social Media Share Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="মডার্ন ইন্টেরিয়র হাউস | Modern interior House">
+    <meta property="og:description" content="স্টাফ কোয়ার্টার, ডেমরা, ঢাকা - ফ্ল্যাট, মডার্ন কিচেন ক্যাবিনেট ও অফিস ইন্টেরিয়র ডিজাইনের বিশ্বস্ত প্রতিষ্ঠান। কল: 0161-4545-932">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85">
+    <meta property="og:url" content="https://moderninteriorhouse.com">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Hind Siliguri"', '"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        english: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cream: {
+                            50: '#FAF8F5',
+                            100: '#F4EFE6',
+                            200: '#EAE0D0',
+                            300: '#DCCBB2',
+                        },
+                        charcoal: {
+                            800: '#262626',
+                            900: '#1C1C1C',
+                            950: '#121212',
+                        },
+                        gold: {
+                            400: '#D4B075',
+                            500: '#C59D5F',
+                            600: '#A88144',
+                            700: '#886531',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF8F5;
+            color: #1C1C1C;
+            overflow-x: hidden;
+        }
+        
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(18, 18, 18, 0.92) 0%, rgba(28, 28, 28, 0.80) 55%, rgba(28, 28, 28, 0.65) 100%);
+        }
+
+        .glass-nav {
+            background: rgba(250, 248, 245, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .glass-dark {
+            background: rgba(38, 38, 38, 0.72);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        @keyframes pulseSlow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+        .animate-pulse-slow {
+            animation: pulseSlow 3.2s infinite ease-in-out;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: all 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        input[type="range"].gold-slider {
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgba(255, 255, 255, 0.15);
+            height: 8px;
+            border-radius: 999px;
+            outline: none;
+        }
+        input[type="range"].gold-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: #C59D5F;
+            border: 3px solid #121212;
+            cursor: pointer;
+            box-shadow: 0 0 12px rgba(197, 157, 95, 0.6);
+            transition: transform 0.2s;
+        }
+        input[type="range"].gold-slider::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+        }
+
+        .ba-container {
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+            touch-action: pan-y;
+        }
+        .ba-before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            overflow: hidden;
+            border-right: 3px solid #D4B075;
+        }
+        .ba-handle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #121212;
+            border: 2px solid #D4B075;
+            color: #D4B075;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.55);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-charcoal-950 text-cream-100 text-xs sm:text-sm py-2 px-4 border-b border-gold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2 text-cream-200">
+                <i class="fa-solid fa-location-dot text-gold-500 shrink-0"></i>
+                <span>স্টাফ কোয়ার্টার, ডেমরা, ঢাকা — <strong>সমগ্র বাংলাদেশে সার্ভিস দিয়ে থাকি</strong></span>
+            </div>
+            <div class="flex items-center gap-4 ml-auto">
+                <a href="tel:+8801614545932" class="hover:text-gold-400 transition flex items-center gap-1.5 font-semibold">
+                    <i class="fa-solid fa-phone text-gold-500"></i>
+                    <span>0161-4545-932</span>
+                </a>
+                <span class="hidden sm:inline text-charcoal-800">|</span>
+                <a href="https://www.facebook.com/modern.interior.house" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-1.5 text-gold-400 hover:text-gold-300 font-medium transition">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>অফিসিয়াল ফেইসবুক</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header / Navbar -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-cream-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#estimator" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-charcoal-900 border border-gold-500/50 flex items-center justify-center shadow-md group-hover:border-gold-400 transition shrink-0">
+                        <svg class="w-6 h-6 text-gold-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10.5L12 3l9 7.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9.5z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 10h6" />
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-lg sm:text-xl font-bold tracking-tight text-charcoal-900 leading-none">
+                            মডার্ন ইন্টেরিয়র <span class="text-gold-600">হাউস</span>
+                        </span>
+                        <span class="block font-english text-xs sm:text-[13px] font-semibold tracking-wide text-charcoal-800/80 mt-1" style="text-transform: none;">
+                            Modern interior House
+                        </span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center gap-6 text-base font-medium text-charcoal-800">
+                    <a href="#estimator" class="hover:text-gold-600 transition py-1 flex items-center gap-1">
+                        <span>খরচ হিসাব</span>
+                        <span class="text-[10px] bg-gold-500/20 text-gold-700 font-bold px-1.5 py-0.5 rounded-full">ক্যালকুলেটর</span>
+                    </a>
+                    <a href="#facebook-section" class="hover:text-gold-600 transition py-1">অফিসিয়াল ফেইসবুক</a>
+                    <a href="#ba-section" class="hover:text-gold-600 transition py-1">আগে ও পরে</a>
+                    <a href="#home" class="hover:text-gold-600 transition py-1">হোম</a>
+                    <a href="#services" class="hover:text-gold-600 transition py-1">সেবা সমূহ</a>
+                    <a href="#portfolio" class="hover:text-gold-600 transition py-1">প্রজেক্ট গ্যালারি</a>
+                </nav>
+
+                <div class="hidden md:flex items-center gap-2.5">
+                    <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিট%20এর%20জন্য%20যোগাযোগ%20করতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition duration-300 shadow-sm">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>হোয়াটসঅ্যাপ</span>
+                    </a>
+                    <a href="tel:+8801614545932" class="inline-flex items-center gap-2 bg-charcoal-900 hover:bg-gold-600 text-white px-4 py-2.5 rounded-xl font-semibold text-sm transition duration-300 shadow-md">
+                        <i class="fa-solid fa-phone-volume text-gold-400"></i>
+                        <span>কল করুন</span>
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" aria-label="মেনু খুলুন" class="lg:hidden p-2.5 rounded-xl text-charcoal-900 hover:bg-cream-200/70 transition cursor-pointer">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-cream-50 border-t border-cream-200 px-4 pt-3 pb-6 shadow-xl">
+            <div class="flex flex-col space-y-1.5 text-base font-medium text-charcoal-900">
+                <a href="#estimator" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">খরচ ক্যালকুলেটর</a>
+                <a href="#facebook-section" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">অফিসিয়াল ফেইসবুক</a>
+                <a href="#ba-section" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">আগে ও পরের পার্থক্য</a>
+                <a href="#home" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">হোম</a>
+                <a href="#services" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">সেবা সমূহ</a>
+                <a href="#portfolio" class="mobile-link px-3 py-2.5 rounded-xl hover:bg-cream-200/60 transition">প্রজেক্ট গ্যালারি</a>
+            </div>
+            <div class="mt-4 pt-4 border-t border-cream-200 grid grid-cols-2 gap-3">
+                <a href="tel:+8801614545932" class="flex items-center justify-center gap-2 bg-charcoal-900 text-white py-3 rounded-xl font-semibold text-sm shadow">
+                    <i class="fa-solid fa-phone text-gold-400"></i>
+                    <span>কল করুন</span>
+                </a>
+                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিটের%20জন্য%20কথা%20বলতে%20চাই।" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-emerald-600 text-white py-3 rounded-xl font-semibold text-sm shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>হোয়াটসঅ্যাপ</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ১. ইন্টেরিয়র প্রোজেক্টের খরচের হিসাব পেতে এই ক্যালকুলেটর ব্যবহার করুন -->
+    <section id="estimator" class="py-16 sm:py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+            <span class="text-gold-600 font-semibold tracking-wider uppercase text-sm">বাজেট প্ল্যানার</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-charcoal-900 mt-2">ইন্টেরিয়র প্রোজেক্টের খরচের হিসাব পেতে এই ক্যালকুলেটর ব্যবহার করুন</h2>
+        </div>
+
+        <div class="bg-charcoal-900 rounded-[2rem] p-7 sm:p-12 text-white shadow-2xl border border-gold-500/30 relative overflow-hidden reveal">
+            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-gold-400 font-semibold tracking-wider uppercase text-xs sm:text-sm">স্মার্ট বাজেট ক্যালকুলেটর</span>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white mt-1.5">খরচ হিসাব বের করুন</h3>
+                        <p class="text-cream-200/75 text-sm sm:text-base mt-2">
+                            ফ্ল্যাটের আয়তন ও পছন্দের প্যাকেজ নির্বাচন করে মুহূর্তেই একটি আনুমানিক বাজেট ধারণা নিন।
+                        </p>
+                    </div>
+
+                    <div class="bg-charcoal-800/80 p-5 rounded-2xl border border-white/10">
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="sqft-range" class="font-semibold text-sm sm:text-base text-cream-100">ফ্ল্যাটের মোট আয়তন (বর্গফুট):</label>
+                            <span class="bg-gold-500 text-charcoal-950 font-bold px-3.5 py-1 rounded-xl text-base sm:text-lg">
+                                <span id="sqft-display">১২০০</span> Sq. Ft.
+                            </span>
+                        </div>
+                        <input type="range" id="sqft-range" min="600" max="3500" step="50" value="1200" class="w-full gold-slider">
+                        <div class="flex justify-between text-xs text-cream-200/60 mt-2">
+                            <span>৬০০ বর্গফুট</span>
+                            <span>২০০০ বর্গফুট</span>
+                            <span>৩৫০০ বর্গফুট</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-semibold text-sm sm:text-base text-cream-100 mb-3">প্যাকেজের ধরন নির্বাচন করুন:</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="package-options">
+                            <button type="button" data-rate="650" data-name="স্ট্যান্ডার্ড প্যাকেজ" class="pkg-btn active text-left p-4 rounded-2xl border-2 border-gold-500 bg-gold-500/15 transition cursor-pointer">
+                                <span class="block font-bold text-gold-400 text-base">স্ট্যান্ডার্ড</span>
+                                <span class="block text-xs text-cream-200/80 mt-1">প্রয়োজনীয় ক্যাবিনেট, সিলিং ও পেইন্ট</span>
+                            </button>
+                            <button type="button" data-rate="950" data-name="প্রিমিয়াম প্যাকেজ" class="pkg-btn text-left p-4 rounded-2xl border border-white/15 bg-charcoal-800/70 hover:border-gold-400/50 transition cursor-pointer">
+                                <span class="block font-bold text-white text-base">প্রিমিয়াম</span>
+                                <span class="block text-xs text-cream-200/80 mt-1">মডুলার কিচেন, ওয়াল প্যানেল ও লাইটিং</span>
+                            </button>
+                            <button type="button" data-rate="1350" data-name="লাক্সারি টার্নকি প্যাকেজ" class="pkg-btn text-left p-4 rounded-2xl border border-white/15 bg-charcoal-800/70 hover:border-gold-400/50 transition cursor-pointer">
+                                <span class="block font-bold text-white text-base">লাক্সারি টার্নকি</span>
+                                <span class="block text-xs text-cream-200/80 mt-1">সম্পূর্ণ ফ্ল্যাট লাক্সারি ফিনিশ ও ফার্নিচার</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 glass-dark p-7 sm:p-8 rounded-3xl border border-gold-400/40 text-center">
+                    <span class="inline-block text-xs font-bold uppercase tracking-wider text-gold-300 bg-gold-500/20 px-3 py-1 rounded-full mb-3">
+                        আনুমানিক বাজেট ধারণা
+                    </span>
+                    <p id="selected-pkg-label" class="text-sm text-cream-200/80 mb-1">স্ট্যান্ডার্ড প্যাকেজ • ১২০০ বর্গফুট</p>
+                    <div class="text-3xl sm:text-4xl font-bold text-gold-400 my-3">
+                        ৳ <span id="estimated-cost">৭,৮০,০০০</span>
+                    </div>
+                    <p class="text-xs text-cream-200/70 leading-relaxed mb-6">
+                        * এটি একটি প্রাথমিক ধারণা মাত্র। ডিজাইন, বোর্ডের মান ও কাজের পরিধির ওপর ভিত্তি করে চূড়ান্ত বাজেট কম-বেশি হতে পারে।
+                    </p>
+                    <a id="estimator-wa-btn" href="#" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-5 rounded-xl shadow-lg transition">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>এই বাজেটে বিস্তারিত কোটেশন নিন</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ২. অফিসিয়াল ফেইসবুক অংশটি -->
+    <section id="facebook-section" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="reveal">
+            <a href="https://www.facebook.com/modern.interior.house" 
+               target="_blank" 
+               rel="noopener"
+               class="group bg-gradient-to-r from-[#1877F2]/25 via-charcoal-900 to-[#1877F2]/15 hover:from-[#1877F2]/35 p-6 sm:p-8 rounded-3xl border-2 border-[#1877F2]/40 transition shadow-xl flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-5 text-center sm:text-left">
+                    <div class="w-16 h-16 rounded-2xl bg-[#1877F2] text-white flex items-center justify-center text-3xl shrink-0 shadow-lg mx-auto sm:mx-0">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-blue-300">অফিসিয়াল ফেইসবুক</span>
+                        <h3 class="font-english text-xl sm:text-2xl font-bold text-white mt-1" style="text-transform: none;">Modern interior House</h3>
+                        <p class="text-xs sm:text-sm text-cream-200/80 mt-1">আমাদের প্রতিদিনের নতুন প্রজেক্ট এবং ডিজাইন আপডেট দেখতে অফিসিয়াল ফেইসবুক পেজে ভিজিট করুন।</p>
+                    </div>
+                </div>
+                <span class="inline-flex items-center gap-2.5 bg-white text-charcoal-950 font-bold px-6 py-3.5 rounded-xl text-base shrink-0 group-hover:bg-gold-400 transition shadow-md">
+                    <span>অফিসিয়াল ফেইসবুক পেজে যান</span>
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ফ্রী সাইট ভিজিট এর জন্য এখনি ফোন দিন -->
+    <section class="py-16 bg-gold-500/10 border-y border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-gold-500/25 text-gold-700 font-bold text-xs uppercase tracking-wider mb-3">
+                বিশেষ অফার
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-charcoal-900 mb-4">ফ্রী সাইট ভিজিট এর জন্য এখনি ফোন দিন</h2>
+            <p class="text-charcoal-800/80 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+                ঢাকা কিংবা সমগ্র বাংলাদেশের যেকোনো প্রান্তে আপনার ফ্ল্যাট বা প্রজেক্ট লোকেশনে আমাদের অভিজ্ঞ ইঞ্জিনিয়ার টিম সম্পূর্ণ ফ্রী সাইট ভিজিট ও প্রাথমিক পরামর্শ প্রদান করছে।
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:+8801614545932" class="inline-flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold px-8 py-4 rounded-2xl text-lg shadow-xl transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone-volume text-xl"></i>
+                    <span>0161-4545-932 (এখনি কল করুন)</span>
+                </a>
+                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিটের%20জন্য%20যোগাযোগ%20করতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-2xl text-lg shadow-xl transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                    <span>হোয়াটসঅ্যাপে বুক করুন</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- সমগ্র বাংলাদেশে সার্ভিস দিয়ে থাকি -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-charcoal-950 text-white rounded-[2rem] p-8 sm:p-14 border border-gold-500/30 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">দেশব্যাপী উপস্থিতি</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">সমগ্র বাংলাদেশে সার্ভিস দিয়ে থাকি</h2>
+                    <p class="text-cream-200/80 text-base leading-relaxed">
+                        ঢাকা, ডেমরা, উত্তরা, বনশ্রী, গুলশান ও ধানমন্ডি ছাড়াও চট্টগ্রাম, সিলেট, রাজশাহী, খুলনা, কুমিল্লাসহ সমগ্র বাংলাদেশের যেকোনো প্রান্তে আমরা সুনামের সাথে আবাসিক ও বাণিজ্যিক ইন্টেরিয়র কাজ সফলভাবে সম্পন্ন করে আসছি।
+                    </p>
+                </div>
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border-2 border-gold-500/40 shadow-2xl h-[320px]">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" 
+                            alt="সমগ্র বাংলাদেশে ইন্টেরিয়র সার্ভিস" 
+                            class="w-full h-full object-cover"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-gold-400 font-bold text-lg">আপনার জেলা বা শহরে সার্ভিস নিতে কল করুন</p>
+                            <p class="text-white text-sm mt-1">হটলাইন: 0161-4545-932</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- আগে আর পরের পার্থক্য দেখতে এই ছবির উপর ক্লিক করুন -->
+    <section id="ba-section" class="py-16 sm:py-20 bg-charcoal-950 text-white border-y border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+                <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">ভিজ্যুয়াল ট্রান্সফরমেশন</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-3">আগে আর পরের পার্থক্য দেখতে এই ছবির উপর ক্লিক করুন</h2>
+                <p class="text-cream-200/80 text-base">
+                    নিচের স্লাইডারটিতে ড্র্যাগ করে অথবা ক্লিক করে দেখুন কীভাবে একটি সাধারণ রুম আধুনিক ইন্টেরিয়রের ছোঁয়ায় বদলে যায়।
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto reveal">
+                <div id="ba-slider" class="ba-container rounded-3xl h-[340px] sm:h-[460px] w-full shadow-2xl border-2 border-gold-500/40 cursor-ew-resize">
+                    <img 
+                        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" 
+                        alt="ইন্টেরিয়র ডিজাইনের পর" 
+                        loading="lazy"
+                        class="w-full h-full object-cover"
+                    >
+                    <span class="absolute top-4 right-4 bg-gold-500 text-charcoal-950 font-bold text-xs px-3.5 py-1.5 rounded-full shadow">
+                        ডিজাইনের পর (After)
+                    </span>
+
+                    <div id="ba-before-layer" class="ba-before">
+                        <img 
+                            id="ba-before-img"
+                            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=85" 
+                            alt="ইন্টেরিয়র ডিজাইনের আগে" 
+                            loading="lazy"
+                            class="h-full object-cover max-w-none"
+                        >
+                        <span class="absolute top-4 left-4 bg-charcoal-900/90 text-white font-semibold text-xs px-3.5 py-1.5 rounded-full border border-white/20">
+                            ডিজাইনের আগে (Before)
+                        </span>
+                    </div>
+
+                    <div id="ba-handle-btn" class="ba-handle">
+                        <i class="fa-solid fa-arrows-left-right text-sm"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- আপনার স্বপ্নের ঘরকে সাজান আধুনিক ও নান্দনিক ছোঁয়ায় (হিরো সেকশন - আগে ও পরের পার্থক্যের ঠিক পরে) -->
+    <section id="home" class="relative min-h-[75vh] flex items-center overflow-hidden my-10">
+        <img 
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=85" 
+            alt="মডার্ন ইন্টেরিয়র হাউস" 
+            class="absolute inset-0 w-full h-full object-cover object-center scale-105"
+        >
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 w-full">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/20 border border-gold-400/40 text-gold-300 text-xs sm:text-sm font-medium mb-6 backdrop-blur-sm">
+                    <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping shrink-0"></span>
+                    <span>সমগ্র বাংলাদেশে সার্ভিস দিয়ে থাকি</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                    আপনার স্বপ্নের ঘরকে সাজান <span class="text-gold-400">আধুনিক ও নান্দনিক ছোঁয়ায়</span>
+                </h1>
+
+                <p class="text-base sm:text-xl text-cream-100/90 leading-relaxed mb-8 font-normal max-w-2xl">
+                    <strong>মডার্ন ইন্টেরিয়র হাউস</strong> (<span class="font-english text-gold-300 font-medium" style="text-transform: none;">Modern interior House</span>)-এর অভিজ্ঞ আর্কিটেক্ট ও দক্ষ কারিগরদের মাধ্যমে ফ্ল্যাট, ডুপ্লেক্স, কিচেন এবং অফিস স্পেসকে রূপ দিন আভিজাত্য ও কার্যকারিতার এক অনন্য শিল্পকর্মে।
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="tel:+8801614545932" 
+                       class="inline-flex items-center justify-center gap-3 bg-gold-500 hover:bg-gold-400 text-charcoal-950 px-6 sm:px-7 py-4 rounded-2xl font-bold text-base sm:text-lg shadow-xl shadow-black/30 transition transform hover:-translate-y-0.5">
+                        <i class="fa-solid fa-phone-volume text-xl"></i>
+                        <span>ফ্রী সাইট ভিজিট এর জন্য এখনি ফোন দিন (0161-4545-932)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+            <span class="text-gold-600 font-semibold tracking-wider uppercase text-sm">আমাদের বিশেষত্ব</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-charcoal-900 mt-2 mb-4">আমাদের সেবা সমূহ</h2>
+            <p class="text-charcoal-800/80 text-base sm:text-lg">
+                পরিকল্পনা ও থ্রিডি ডিজাইন থেকে শুরু করে চূড়ান্ত বাস্তবায়ন—আপনার প্রতিটি প্রয়োজনে আমরা দিচ্ছি পূর্ণাঙ্গ ইন্টেরিয়র সমাধান।
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+            <div class="reveal group bg-white rounded-3xl p-7 border border-cream-200 shadow-sm hover:shadow-xl hover:border-gold-400/60 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-cream-100 text-gold-600 group-hover:bg-charcoal-900 group-hover:text-gold-400 flex items-center justify-center text-2xl transition duration-300 mb-6">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-charcoal-900 mb-3">ফ্ল্যাট ও বাসাবাড়ি ইন্টেরিয়র</h3>
+                    <p class="text-charcoal-800/80 leading-relaxed text-sm sm:text-base mb-6">
+                        আপনার পুরো ফ্ল্যাট বা ডুপ্লেক্স বাড়ির প্রতিটি কোণার নান্দনিক ও আধুনিক ডিজাইন, স্পেস অপ্টিমাইজেশন এবং টার্নকি প্রজেক্ট বাস্তবায়ন।
+                    </p>
+                </div>
+                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্ল্যাট%20ও%20বাসাবাড়ি%20ইন্টেরিয়র%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gold-600 font-semibold text-sm group-hover:text-charcoal-900 transition">
+                    <span>হোয়াটসঅ্যাপে বিস্তারিত জানুন</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <div class="reveal group bg-white rounded-3xl p-7 border border-cream-200 shadow-sm hover:shadow-xl hover:border-gold-400/60 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-cream-100 text-gold-600 group-hover:bg-charcoal-900 group-hover:text-gold-400 flex items-center justify-center text-2xl transition duration-300 mb-6">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-charcoal-900 mb-3">মডার্ন কিচেন ক্যাবিনেট</h3>
+                    <p class="text-charcoal-800/80 leading-relaxed text-sm sm:text-base mb-6">
+                        ওয়াটারপ্রুফ মেরিন বোর্ড, এক্রিলিক ও এইচপিএল ফিনিশ, স্মার্ট স্টোরেজ সলিউশন ও চমৎকার ফিটিংসের মাধ্যমে আধুনিক মডুলার কিচেন ক্যাবিনেট তৈরি।
+                    </p>
+                </div>
+                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20মডার্ন%20কিচেন%20ক্যাবিনেট%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gold-600 font-semibold text-sm group-hover:text-charcoal-900 transition">
+                    <span>হোয়াটসঅ্যাপে বিস্তারিত জানুন</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+
+            <div class="reveal group bg-white rounded-3xl p-7 border border-cream-200 shadow-sm hover:shadow-xl hover:border-gold-400/60 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-14 h-14 rounded-2xl bg-cream-100 text-gold-600 group-hover:bg-charcoal-900 group-hover:text-gold-400 flex items-center justify-center text-2xl transition duration-300 mb-6">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-charcoal-900 mb-3">লাক্সারি বেডরুম ও ওয়ারড্রোব</h3>
+                    <p class="text-charcoal-800/80 leading-relaxed text-sm sm:text-base mb-6">
+                        ফুল-হাইট ওয়াল ক্যাবিনেট, স্লাইডিং ওয়ারড্রোব, আধুনিক ড্রেসিং ইউনিট, হেডবোর্ড প্যানেলিং এবং আরামদায়ক ও অভিজাত মাস্টার বেডরুম ডিজাইন।
+                    </p>
+                </div>
+                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20লাক্সারি%20বেডরুম%20ও%20ওয়ারড্রোব%20সেবা%20সম্পর্কে%20জানতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-gold-600 font-semibold text-sm group-hover:text-charcoal-900 transition">
+                    <span>হোয়াটসঅ্যাপে বিস্তারিত জানুন</span>
+                    <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Portfolio Gallery -->
+    <section id="portfolio" class="py-20 sm:py-24 bg-cream-100/80 border-y border-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 reveal">
+                <span class="text-gold-600 font-semibold tracking-wider uppercase text-sm">পোর্টফোলিও</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-charcoal-900 mt-2 mb-4">সাম্প্রতিক প্রজেক্ট সমূহ</h2>
+                <p class="text-charcoal-800/80 text-base sm:text-lg">
+                    ডেমরা, বনশ্রী, ধানমন্ডি ও উত্তরাসহ দেশের বিভিন্ন এলাকায় সম্পন্ন করা আমাদের বাছাইকৃত কিছু প্রজেক্ট দেখুন।
+                </p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3 mb-12 reveal" id="portfolio-filters">
+                <button data-filter="all" class="filter-btn active bg-charcoal-900 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-sm transition cursor-pointer">
+                    সব প্রজেক্ট
+                </button>
+                <button data-filter="living" class="filter-btn bg-white text-charcoal-800 hover:bg-cream-200 px-5 py-2.5 rounded-full text-sm font-semibold border border-cream-300 transition cursor-pointer">
+                    লিভিং রুম
+                </button>
+                <button data-filter="bedroom" class="filter-btn bg-white text-charcoal-800 hover:bg-cream-200 px-5 py-2.5 rounded-full text-sm font-semibold border border-cream-300 transition cursor-pointer">
+                    বেডরুম
+                </button>
+                <button data-filter="kitchen" class="filter-btn bg-white text-charcoal-800 hover:bg-cream-200 px-5 py-2.5 rounded-full text-sm font-semibold border border-cream-300 transition cursor-pointer">
+                    কিচেন
+                </button>
+                <button data-filter="office" class="filter-btn bg-white text-charcoal-800 hover:bg-cream-200 px-5 py-2.5 rounded-full text-sm font-semibold border border-cream-300 transition cursor-pointer">
+                    অফিস
+                </button>
+            </div>
+
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7"></div>
+        </div>
+    </section>
+
+    <!-- যোগাযোগ সেকশন -->
+    <section id="contact" class="py-20 sm:py-24 bg-charcoal-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+                <span class="text-gold-400 font-semibold tracking-wider uppercase text-sm">যোগাযোগ করুন</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">আমাদের সাথে যোগাযোগ করুন</h2>
+                <p class="text-cream-200/80 text-base sm:text-lg">
+                    ফ্রী সাইট ভিজিট, বাজেট কোটেশন অথবা যেকোনো প্রয়োজনে আমাদের সাথে সরাসরি কথা বলুন।
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div class="lg:col-span-7 flex flex-col justify-between gap-5 reveal">
+                    <div class="bg-charcoal-800 p-6 sm:p-7 rounded-3xl border border-gold-500/30 shadow-lg">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
+                            <div class="flex items-start sm:items-center gap-4">
+                                <div class="w-14 h-14 rounded-2xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-2xl shrink-0">
+                                    <i class="fa-solid fa-phone-volume"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-gold-400">সরাসরি কল ও হোয়াটসঅ্যাপ</span>
+                                    <h3 class="text-2xl sm:text-3xl font-bold text-white mt-0.5">0161-4545-932</h3>
+                                    <p class="text-sm text-cream-200/75 mt-1">যেকোনো তথ্যের জন্য ফ্রী কল করুন</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-wrap sm:flex-col gap-2.5 shrink-0">
+                                <a href="tel:+8801614545932" class="inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold px-5 py-2.5 rounded-xl text-sm transition">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>কল করুন</span>
+                                </a>
+                                <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিটের%20জন্য%20যোগাযোগ%20করতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition">
+                                    <i class="fa-brands fa-whatsapp text-base"></i>
+                                    <span>হোয়াটসঅ্যাপ</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-charcoal-800 p-6 rounded-3xl border border-white/10 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-2xl bg-gold-500/15 text-gold-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-wider text-gold-400">অফিসের ঠিকানা</span>
+                            <h4 class="text-lg font-bold text-white mt-0.5">স্টাফ কোয়ার্টার, ডেমরা, ঢাকা</h4>
+                            <p class="text-xs sm:text-sm text-cream-200/75 mt-1">সমগ্র বাংলাদেশে আমাদের সার্ভিস উপলব্ধ।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-cream-50 text-charcoal-900 rounded-3xl p-7 sm:p-8 shadow-2xl border border-gold-400/30 flex flex-col justify-center reveal">
+                    <div class="mb-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-gold-700 bg-gold-500/15 px-3 py-1 rounded-full">
+                            ফ্রী কনসালটেশন রিকোয়েস্ট
+                        </span>
+                        <h3 class="text-2xl font-bold text-charcoal-900 mt-3">হোয়াটসঅ্যাপে তথ্য পাঠান</h3>
+                        <p class="text-sm text-charcoal-800/80 mt-1">
+                            আপনার নাম ও মোবাইল নম্বর দিয়ে সাবমিট করলেই সরাসরি আমাদের হোয়াটসঅ্যাপে মেসেজ চলে যাবে।
+                        </p>
+                    </div>
+
+                    <form id="callback-form" class="space-y-4">
+                        <div>
+                            <label for="client-name" class="block text-sm font-semibold text-charcoal-900 mb-1.5">আপনার নাম *</label>
+                            <input 
+                                type="text" 
+                                id="client-name" 
+                                required 
+                                placeholder="যেমন: মো. রাশেদুল ইসলাম" 
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-cream-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition text-charcoal-900"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="client-phone" class="block text-sm font-semibold text-charcoal-900 mb-1.5">মোবাইল নম্বর *</label>
+                            <input 
+                                type="tel" 
+                                id="client-phone" 
+                                required 
+                                placeholder="যেমন: 017XXXXXXXX" 
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-cream-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition text-charcoal-900"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="project-type" class="block text-sm font-semibold text-charcoal-900 mb-1.5">প্রজেক্টের ধরন</label>
+                            <select 
+                                id="project-type" 
+                                class="w-full px-4 py-3 rounded-xl bg-white border border-cream-300 focus:border-gold-500 focus:ring-2 focus:ring-gold-500/20 outline-none transition text-charcoal-900"
+                            >
+                                <option value="ফ্ল্যাট ও বাসাবাড়ি ইন্টেরিয়র">ফ্ল্যাট ও বাসাবাড়ি ইন্টেরিয়র</option>
+                                <option value="মডার্ন কিচেন ক্যাবিনেট">মডার্ন কিচেন ক্যাবিনেট</option>
+                                <option value="লাক্সারি বেডরুম ও ওয়ারড্রোব">লাক্সারি বেডরুম ও ওয়ারড্রোব</option>
+                                <option value="অফিস ও কমার্শিয়াল স্পেস">অফিস ও কমার্শিয়াল স্পেস</option>
+                            </select>
+                        </div>
+
+                        <button 
+                            type="submit" 
+                            class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2 cursor-pointer mt-2"
+                        >
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>হোয়াটসঅ্যাপে রিকোয়েস্ট পাঠান</span>
+                        </button>
+                    </form>
+
+                    <div id="form-success" class="hidden mt-5 p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-950">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+                            <div class="w-full">
+                                <h4 class="font-bold text-base">ধন্যবাদ! আপনার মেসেজ প্রস্তুত হয়েছে।</h4>
+                                <p id="success-detail" class="text-sm text-emerald-800 mt-1"></p>
+                                <a id="direct-wa-followup" href="https://wa.me/8801614545932" target="_blank" rel="noopener" class="mt-3 w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-2.5 px-4 rounded-xl text-sm shadow transition">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                    <span>হোয়াটসঅ্যাপ খুলুন</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal-950 text-cream-200/80 pt-16 pb-32 sm:pb-14 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-xl bg-charcoal-900 border border-gold-500/50 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-house-chimney text-gold-400"></i>
+                        </div>
+                        <div>
+                            <span class="block text-xl font-bold text-white leading-none">
+                                মডার্ন ইন্টেরিয়র <span class="text-gold-400">হাউস</span>
+                            </span>
+                            <span class="block font-english text-xs font-medium text-cream-200/75 mt-1" style="text-transform: none;">Modern interior House</span>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-md text-cream-200/75 mb-5">
+                        আধুনিক স্থাপত্যশৈলী ও নান্দনিক ডিজাইনের মাধ্যমে আমরা আপনার আবাসিক ও বাণিজ্যিক স্থানকে করে তুলি অনন্য। সমগ্র বাংলাদেশে আমরা সার্ভিস প্রদান করে থাকি।
+                    </p>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <a href="https://www.facebook.com/modern.interior.house" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1877F2] hover:bg-blue-600 text-white text-sm font-semibold transition shadow">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>ফেইসবুক পেজ</span>
+                        </a>
+                        <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিটের%20জন্য%20কথা%20বলতে%20চাই।" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold transition shadow">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>হোয়াটসঅ্যাপ</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">দ্রুত লিংক</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#estimator" class="hover:text-gold-400 transition">খরচ ক্যালকুলেটর</a></li>
+                        <li><a href="#facebook-section" class="hover:text-gold-400 transition">অফিসিয়াল ফেইসবুক</a></li>
+                        <li><a href="#ba-section" class="hover:text-gold-400 transition">আগে ও পরে</a></li>
+                        <li><a href="#home" class="hover:text-gold-400 transition">হোম</a></li>
+                        <li><a href="#services" class="hover:text-gold-400 transition">সেবা সমূহ</a></li>
+                        <li><a href="#contact" class="hover:text-gold-400 transition">যোগাযোগ</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-base mb-4">যোগাযোগ</h4>
+                    <p class="text-sm text-cream-200/85 mb-2">স্টাফ কোয়ার্টার, ডেমরা, ঢাকা</p>
+                    <p class="text-sm text-cream-200/85 mb-2">ফোন: <a href="tel:+8801614545932" class="text-gold-400 font-semibold">0161-4545-932</a></p>
+                    <p class="text-xs text-gold-400 font-medium">সমগ্র বাংলাদেশে সার্ভিস দিয়ে থাকি</p>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-cream-200/65">
+                <p>© ২০২৬ মডার্ন ইন্টেরিয়র হাউস (<span class="font-english" style="text-transform: none;">Modern interior House</span>)। সর্বস্বত্ব সংরক্ষিত।</p>
+                <p>সমগ্র বাংলাদেশব্যাপী সার্ভিস উপলব্ধ</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Bottom-Right Action Buttons -->
+    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2.5">
+        <a href="tel:+8801614545932" 
+           aria-label="সরাসরি কল করুন"
+           class="group flex items-center gap-2 bg-charcoal-900 hover:bg-gold-500 text-white hover:text-charcoal-950 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full shadow-2xl border border-gold-400/50 transition-all duration-300">
+            <i class="fa-solid fa-phone-volume text-gold-400 group-hover:text-charcoal-950 text-sm sm:text-base"></i>
+            <span class="text-xs sm:text-sm font-bold">কল করুন</span>
+        </a>
+
+        <a href="https://wa.me/8801614545932?text=আসসালামু%20আলাইকুম,%20ফ্রী%20সাইট%20ভিজিটের%20জন্য%20যোগাযোগ%20করতে%20চাই।" 
+           target="_blank" 
+           rel="noopener"
+           aria-label="হোয়াটসঅ্যাপে মেসেজ দিন"
+           class="animate-pulse-slow flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-full shadow-2xl shadow-emerald-950/50 transition-all duration-300">
+            <i class="fa-brands fa-whatsapp text-lg sm:text-xl"></i>
+            <span class="text-xs sm:text-sm font-bold">হোয়াটসঅ্যাপ</span>
+        </a>
+    </div>
+
+    <!-- Project Lightbox Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-cream-50 rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl border border-gold-400/30 relative">
+            <button id="close-modal" aria-label="বন্ধ করুন" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-charcoal-900/85 hover:bg-charcoal-900 text-white flex items-center justify-center transition cursor-pointer">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div class="aspect-video w-full bg-charcoal-900 overflow-hidden">
+                <img id="modal-img" src="" alt="প্রজেক্ট প্রিভিউ" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="p-6 sm:p-8">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <span id="modal-category" class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-gold-500/20 text-gold-700"></span>
+                    <span id="modal-location" class="text-sm text-charcoal-800/80 flex items-center gap-1.5 font-medium">
+                        <i class="fa-solid fa-location-dot text-gold-600"></i> <span></span>
+                    </span>
+                </div>
+                <h3 id="modal-title" class="text-2xl font-bold text-charcoal-900 mb-3"></h3>
+                <p id="modal-desc" class="text-charcoal-800/85 text-sm sm:text-base leading-relaxed mb-6"></p>
+                
+                <div class="flex flex-col sm:flex-row gap-3 pt-4 border-t border-cream-200">
+                    <a id="modal-wa-btn" href="#" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-5 rounded-xl transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>এই ডিজাইনটির খরচ জানুন</span>
+                    </a>
+                    <a href="tel:+8801614545932" class="inline-flex items-center justify-center gap-2 bg-charcoal-900 hover:bg-gold-600 text-white font-semibold py-3 px-5 rounded-xl transition">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>কল করুন: 0161-4545-932</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Scripts -->
+    <script>
+        const projectsData = [
+            {
+                id: 1,
+                title: "আধুনিক ড্রয়িং ও ডাইনিং ইন্টেরিয়র",
+                category: "living",
+                categoryLabel: "লিভিং রুম",
+                location: "ডেমরা, ঢাকা",
+                image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85",
+                description: "১৬৫০ বর্গফুটের একটি ফ্ল্যাটের ড্রয়িং ও ডাইনিং স্পেস। এতে মার্বেল ফিনিশ টিভি ক্যাবিনেট, ওয়ার্ম কোভ লাইটিং এবং কাস্টম উডেন পার্টিশন ব্যবহার করা হয়েছে।"
+            },
+            {
+                id: 2,
+                title: "লাক্সারি মাস্টার বেডরুম ও ওয়াল ক্যাবিনেট",
+                category: "bedroom",
+                categoryLabel: "বেডরুম",
+                location: "বনশ্রী, ঢাকা",
+                image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=85",
+                description: "ফ্লোর-টু-সিলিং ফুল হাইট ওয়াল ক্যাবিনেট, সফট কুশন হেডবোর্ড প্যানেলিং এবং প্রশান্তিদায়ক ওয়ার্ম লাইটিংয়ের সমন্বয়ে তৈরি আধুনিক মাস্টার বেডরুম।"
+            },
+            {
+                id: 3,
+                title: "হাই-গ্লস এক্রিলিক মডুলার কিচেন",
+                category: "kitchen",
+                categoryLabel: "কিচেন",
+                location: "ধানমন্ডি, ঢাকা",
+                image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85",
+                description: "ওয়াটারপ্রুফ মেরিন বোর্ড, হাই-গ্লস এক্রিলিক শাটার, সফট-ক্লোজিং ড্রয়ার এবং স্মার্ট স্টোরেজ সলিউশনসহ পরিচ্ছন্ন ও আধুনিক কিচেন ক্যাবিনেট।"
+            },
+            {
+                id: 4,
+                title: "কর্পোরেট অফিস ও ওয়ার্কস্টেশন ইন্টেরিয়র",
+                category: "office",
+                categoryLabel: "অফিস",
+                location: "চট্টগ্রাম",
+                image: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=85",
+                description: "কর্পোরেট অফিস ডেকোরেশন, যেখানে রয়েছে গ্লাস পার্টিশন, আধুনিক ওয়ার্কস্টেশন, এক্সিকিউটিভ রুম এবং সিলিং লাইটিং।"
+            }
+        ];
+
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        function renderProjects(filter = 'all') {
+            portfolioGrid.innerHTML = '';
+            const filtered = filter === 'all' 
+                ? projectsData 
+                : projectsData.filter(item => item.category === filter);
+
+            filtered.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'group bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm hover:shadow-xl transition duration-300 cursor-pointer flex flex-col';
+                card.innerHTML = `
+                    <div class="relative h-64 overflow-hidden bg-charcoal-900">
+                        <img src="${project.image}" alt="${project.title}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-charcoal-900/85 backdrop-blur-sm text-gold-400 text-xs font-semibold px-3 py-1 rounded-full border border-gold-400/30">
+                            ${project.categoryLabel}
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center gap-1.5 text-xs text-gold-600 font-semibold mb-1.5">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>${project.location}</span>
+                            </div>
+                            <h3 class="text-lg font-bold text-charcoal-900 group-hover:text-gold-600 transition">
+                                ${project.title}
+                            </h3>
+                        </div>
+                    </div>
+                `;
+                card.addEventListener('click', () => openModal(project));
+                portfolioGrid.appendChild(card);
+            });
+        }
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-charcoal-900', 'text-white');
+                    b.classList.add('bg-white', 'text-charcoal-800', 'border', 'border-cream-300');
+                });
+                btn.classList.remove('bg-white', 'text-charcoal-800', 'border', 'border-cream-300');
+                btn.classList.add('bg-charcoal-900', 'text-white');
+                renderProjects(btn.dataset.filter);
+            });
+        });
+
+        const modal = document.getElementById('project-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+
+        function openModal(project) {
+            document.getElementById('modal-img').src = project.image;
+            document.getElementById('modal-category').textContent = project.categoryLabel;
+            document.querySelector('#modal-location span').textContent = project.location;
+            document.getElementById('modal-title').textContent = project.title;
+            document.getElementById('modal-desc').textContent = project.description;
+            
+            const waText = encodeURIComponent(`আসসালামু আলাইকুম, প্রজেক্টটি সম্পর্কে জানতে চাই: ${project.title} (${project.location})`);
+            document.getElementById('modal-wa-btn').href = `https://wa.me/8801614545932?text=${waText}`;
+            
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+
+        closeModalBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        const baSlider = document.getElementById('ba-slider');
+        const baBeforeLayer = document.getElementById('ba-before-layer');
+        const baBeforeImg = document.getElementById('ba-before-img');
+        const baHandleBtn = document.getElementById('ba-handle-btn');
+
+        function syncBaImageWidth() {
+            if (baSlider && baBeforeImg) {
+                baBeforeImg.style.width = `${baSlider.offsetWidth}px`;
+            }
+        }
+        window.addEventListener('resize', syncBaImageWidth);
+        syncBaImageWidth();
+
+        function moveSlider(clientX) {
+            const rect = baSlider.getBoundingClientRect();
+            let pos = ((clientX - rect.left) / rect.width) * 100;
+            pos = Math.max(5, Math.min(95, pos));
+            baBeforeLayer.style.width = `${pos}%`;
+            baHandleBtn.style.left = `${pos}%`;
+        }
+
+        let isDragging = false;
+        baSlider.addEventListener('mousedown', (e) => { isDragging = true; moveSlider(e.clientX); });
+        window.addEventListener('mouseup', () => { isDragging = false; });
+        window.addEventListener('mousemove', (e) => { if (isDragging) moveSlider(e.clientX); });
+        baSlider.addEventListener('click', (e) => { moveSlider(e.clientX); });
+
+        baSlider.addEventListener('touchstart', (e) => { moveSlider(e.touches[0].clientX); }, { passive: true });
+        baSlider.addEventListener('touchmove', (e) => { moveSlider(e.touches[0].clientX); }, { passive: true });
+
+        const sqftRange = document.getElementById('sqft-range');
+        const sqftDisplay = document.getElementById('sqft-display');
+        const pkgButtons = document.querySelectorAll('.pkg-btn');
+        const estimatedCostEl = document.getElementById('estimated-cost');
+        const selectedPkgLabel = document.getElementById('selected-pkg-label');
+        const estimatorWaBtn = document.getElementById('estimator-wa-btn');
+
+        let currentRate = 650;
+        let currentPkgName = 'স্ট্যান্ডার্ড প্যাকেজ';
+
+        function toBanglaDigits(num) {
+            const bnDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+            return num.toLocaleString('en-IN').replace(/\d/g, d => bnDigits[d]);
+        }
+
+        function updateEstimator() {
+            const sqft = parseInt(sqftRange.value, 10);
+            const total = sqft * currentRate;
+            const bnSqft = toBanglaDigits(sqft);
+            const bnTotal = toBanglaDigits(total);
+
+            sqftDisplay.textContent = bnSqft;
+            estimatedCostEl.textContent = bnTotal;
+            selectedPkgLabel.textContent = `${currentPkgName} • ${bnSqft} বর্গফুট`;
+
+            const msg = encodeURIComponent(`আসসালামু আলাইকুম Modern interior House,\nক্যালকুলেটর থেকে বাজেট চেক করেছি:\n- আয়তন: ${bnSqft} বর্গফুট\n- প্যাকেজ: ${currentPkgName}\n- আনুমানিক বাজেট: ৳ ${bnTotal}`);
+            estimatorWaBtn.href = `https://wa.me/8801614545932?text=${msg}`;
+        }
+
+        sqftRange.addEventListener('input', updateEstimator);
+
+        pkgButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                pkgButtons.forEach(b => {
+                    b.classList.remove('border-2', 'border-gold-500', 'bg-gold-500/15');
+                    b.classList.add('border', 'border-white/15', 'bg-charcoal-800/70');
+                    b.querySelector('span:first-child').classList.remove('text-gold-400');
+                    b.querySelector('span:first-child').classList.add('text-white');
+                });
+                btn.classList.remove('border', 'border-white/15', 'bg-charcoal-800/70');
+                btn.classList.add('border-2', 'border-gold-500', 'bg-gold-500/15');
+                btn.querySelector('span:first-child').classList.remove('text-white');
+                btn.querySelector('span:first-child').classList.add('text-gold-400');
+
+                currentRate = parseInt(btn.dataset.rate, 10);
+                currentPkgName = btn.dataset.name;
+                updateEstimator();
+            });
+        });
+
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileLinks.forEach(link => link.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+
+        const callbackForm = document.getElementById('callback-form');
+        const formSuccess = document.getElementById('form-success');
+        const successDetail = document.getElementById('success-detail');
+        const directWaFollowup = document.getElementById('direct-wa-followup');
+
+        callbackForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('client-name').value.trim();
+            const phone = document.getElementById('client-phone').value.trim();
+            const projectType = document.getElementById('project-type').value;
+
+            if (!name || !phone) return;
+
+            const waMsg = encodeURIComponent(`নাম: ${name}\nফোন: ${phone}\nপ্রজেক্ট: ${projectType}`);
+            const waUrl = `https://wa.me/8801614545932?text=${waMsg}`;
+
+            successDetail.textContent = `জনাব ${name} (${phone}), আপনার তথ্য হোয়াটসঅ্যাপে প্রস্তুত।`;
+            directWaFollowup.href = waUrl;
+            formSuccess.classList.remove('hidden');
+
+            window.open(waUrl, '_blank', 'noopener');
+            callbackForm.reset();
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        renderProjects('all');
+        updateEstimator();
+    </script>
+</body>
+</html>
